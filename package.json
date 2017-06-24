@@ -1,0 +1,22 @@
+{
+  "name": "mayankdwivedi",
+  "version": "1.0.0",
+  "description": "\"Mayank Anil Dwivedi is JS geek\"",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maclipi/maclipi.github.io.git"
+  },
+  "keywords": [
+    "\"Mayank\""
+  ],
+  "author": "\"Mayank Anil Dwivedi (maclipi)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maclipi/maclipi.github.io/issues"
+  },
+  "homepage": "https://github.com/maclipi/maclipi.github.io#readme"
+}
