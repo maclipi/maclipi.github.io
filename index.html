@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="vamos">
 <head >
-	<title>{{title}}</title>
+	<title>Mayank Dwivedi</title>
 	<!-- dependenc addintion from node modules -->
 	<script type="text/javascript" src="scripts/jquery/dist/jquery.js"></script>
 	<!-- Latest compiled and minified CSS -->
@@ -17,8 +17,10 @@
 	<script type="text/javascript" src="scripts/angular-route/angular-route.min.js"></script>
 	<script type="text/javascript" src="template/mainCtrl.js"></script>
 	<script type="text/javascript" src="template/loginCtrl.js"></script>
+	<script type="text/javascript" src="template/uploadCtrl.js"></script>
 	<script type="text/javascript" src="js/service.js"></script>
 	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	
 	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<!-- dependenc END from the node_modules Here -->
@@ -28,7 +30,28 @@
 
 </head>
 <body>
-<h1>Hi</h1>
+<div class="nav-side-menu">
+    <div class="brand">Mayank Dwivedi</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+  
+        <div class="menu-list">
+  
+            <ul id="menu-content" class="menu-content collapse out">
+                <li>
+                  <a href="#!/main">
+                  <i class="fa fa-dashboard fa-lg"></i> About Me
+                  </a>
+                </li>
+
+                <li  data-toggle="collapse" data-target="#products">
+                  <a ng-href="#!/login"><i class="fa fa-gift fa-lg"></i> Projects</a>
+                </li>
+
+                <li> <i> "A Passion for which you live is called a dream for we work hard ..."</i></li>
+               
+            </ul>
+     </div>
+</div>
 <div id=includedView ng-view="included" ng-show="location != '/main'"></div>
 
 </body>

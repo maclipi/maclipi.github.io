@@ -12,6 +12,11 @@ vamos.config(['$routeProvider',
 
 			templateUrl: 'template/login.html',
 			controller:'loginCtrl'
+		}).when('/upload',{
+
+			templateUrl:'template/upload.html',
+			controller: 'uploadCtrl'
+
 		}).otherwise({
 
 			redirectTo : '/when'

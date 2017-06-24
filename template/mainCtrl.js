@@ -1,35 +1,11 @@
 angular.module('vamos.controller', [])
 
-.controller('mainCtrl',function ($scope,LoginService,getUserData) {
+.controller('mainCtrl',function ($scope) {
 
-	$scope.user ={
 
-		userName :'',
-		userPassword:''
-	}
+$scope.pageHeading = "I Am Mayank";
 
-	$scope.loginFn = function(username,password){
+$scope.title = "mayank Dwivedi";
 
-		
-		window.localStorage.setItem("validate",1);
-
-		LoginService.all($scope.user.userName,$scope.user.userPassword).then(function(data){
-
-			console.log(data.data.authUser);
-			if (data.data.authUser == "Success")
-			{
-			window.location.href="#!/login";	
-			}
-			
-		});
-
-		getUserData.all($scope.user.userName).then(function(data){
-
-			console.log(data.data);
-		})
-
-		
-
-	}
 	// body...
 })
